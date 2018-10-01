@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-    public void goBack(View v){
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
         Intent intent = new Intent(MainActivity.this, SlashActivity.class);
         startActivity(intent);
-        this.onDestroy();
     }
 
 

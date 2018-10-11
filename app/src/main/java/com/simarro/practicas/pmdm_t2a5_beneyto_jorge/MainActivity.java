@@ -3,16 +3,18 @@ package com.simarro.practicas.pmdm_t2a5_beneyto_jorge;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     private EditText txtnombre;
     private EditText txtpassword;
     private Button Btnaceptar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         txtnombre = (EditText)findViewById(R.id.txtnombre);
         txtpassword = (EditText)findViewById(R.id.txtpassword);
         Btnaceptar = (Button)findViewById(R.id.Blnaceptar);
+
     }
 
     public void bacerclic(View v){
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Error de autenticación"/*"@string/authentication"*/, Toast.LENGTH_SHORT).show();
         }else{
             intent.putExtra("NOMBRE",txtnombre.getText().toString());
+            intent.putExtra("PASSWORD",txtpassword.getText().toString());
             startActivity(intent);
         }
     }
@@ -37,8 +41,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(MainActivity.this, SlashActivity.class);
-        startActivity(intent);
+        /*Intent intent = new Intent(MainActivity.this, SlashActivity.class);
+        startActivity(intent);*/
+    }
+    public void tooglepassword(View v){
+        txtpassword.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
     }
 
     @Override

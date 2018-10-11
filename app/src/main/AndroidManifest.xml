@@ -20,11 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".WelcomeActivity" />
-
+        <activity android:name=".ViewActionActivity" />
+        <activity android:name=".Change_passwordActivity"></activity>
     </application>
 
 </manifest>

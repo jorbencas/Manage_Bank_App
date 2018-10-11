@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="83dp"
-        android:layout_height="81dp"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
@@ -24,23 +24,24 @@
         android:id="@+id/lblnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp"
         android:text="@string/dni"
         app:layout_constraintBottom_toTopOf="@+id/txtnombre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <EditText
         android:id="@+id/txtnombre"
-        style="@style/input_text_vertical_mobile"
+        style="@style/input_text_vertical_tablet"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="8dp"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -58,13 +59,13 @@
 
     <EditText
         android:id="@+id/txtpassword"
-        style="@style/input_text_vertical_mobile"
+        style="@style/input_text_vertical_tablet"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="168dp"
         android:layout_marginEnd="8dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
 
@@ -87,13 +88,13 @@
 
     <Button
         android:id="@+id/Blnaceptar"
-        style="@style/normal_button_vertical_mobile"
-        android:layout_marginTop="56dp"
+        style="@style/normal_button_vertical_tablet"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="8dp"
         android:onClick="bacerclic"
         android:text="@string/action_sign_in_short"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtpassword" />
 

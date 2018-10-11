@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="223dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/textpassword"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textpassword"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+        android:text=""
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bAdd"
+        style="@style/dashboard_button_horizotal_mobile"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+    <ImageButton
+        android:id="@+id/bDelete"
+        style="@style/dashboard_button_horizotal_mobile"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintEnd_toStartOf="@+id/bCamera"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/bAdd"
+        app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+    <ImageButton
+        android:id="@+id/bCamera"
+        style="@style/dashboard_button_horizotal_mobile"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpassword" />
+
+    <ImageButton
+        android:id="@+id/bGallery"
+        style="@style/dashboard_button_horizotal_mobile"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bAdd" />
+
+    <ImageButton
+        android:id="@+id/bCheckbox"
+        style="@style/dashboard_button_horizotal_mobile"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bStar"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/bGallery"
+        app:layout_constraintTop_toBottomOf="@+id/bDelete" />
+
+    <ImageButton
+        android:id="@+id/bStar"
+        style="@style/dashboard_button_horizotal_mobile"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bCamera"
+        app:srcCompat="@android:drawable/star_on" />
+
+</android.support.constraint.ConstraintLayout>

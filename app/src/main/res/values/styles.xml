@@ -10,4 +10,74 @@
 
     <!--<style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>-->
 
+    <style name="normal_button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/text_button_color</item>
+    </style>
+
+    <!--Version de estilos Mobil-->
+
+    <!--Vertical screen-->
+    <style name="dashboard_button_vertical_mobile" parent="@style/normal_button">
+        <item name="android:layout_width">142dp</item>
+        <item name="android:layout_height">129dp</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:drawablePadding">@dimen/button_drawable_padding</item>
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+
+    <style name="normal_button_vertical_mobile" parent="@style/normal_button" >
+        <item name="android:layout_width">249dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="input_text_vertical_mobile">
+        <item name="android:layout_width">249dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!--Horizontal screen-->
+    <style name="dashboard_button_horizotal_mobile" parent="@style/normal_button">
+        <item name="android:layout_width">114dp</item>
+        <item name="android:layout_height">107dp</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:drawablePadding">@dimen/button_drawable_padding</item>
+    </style>
+
+    <style name="normal_button_horizotal_mobile" parent="@style/normal_button" >
+        <item name="android:layout_width">193dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="input_text_horizotal_mobile">
+        <item name="android:layout_width">398dp</item>
+        <item name="android:layout_height">38dp</item>
+    </style>
+
+    <!--Version de estilos Tablet-->
+
+    <!--Vertical screen-->
+
+    <style name="dashboard_button_vertical_tablet" parent="@style/normal_button">
+        <item name="android:layout_width">249dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:drawablePadding">@dimen/button_drawable_padding</item>
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+
+    <style name="normal_button_vertical_tablet" parent="@style/normal_button">
+        <item name="android:layout_width">339dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="input_text_vertical_tablet">
+        <item name="android:layout_width">601dp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <!--Horizontal screen-->
+
 </resources>

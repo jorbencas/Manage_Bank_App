@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">pmdm-t2a5-Beneyto-Jorge</string>
+    <string name="app_name">Manage Bank</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
     <string name="prompt_email">DNI</string>

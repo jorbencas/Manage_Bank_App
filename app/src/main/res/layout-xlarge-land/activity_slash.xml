@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,50 +8,52 @@
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="148dp"
-            android:layout_height="53dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="238dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="206dp"
+            android:layout_marginStart="251dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="246dp"
             android:fontFamily="sans-serif-condensed"
             android:text="Bienvenido"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:visibility="visible" />
 
         <ImageView
-            android:id="@+id/image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_above="@+id/title"
+            android:id="@+id/logo"
+            android:layout_width="214dp"
+            android:layout_height="206dp"
             android:layout_below="@+id/textView"
             android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="273dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="241dp"
-            android:layout_marginBottom="46dp"
+            android:layout_marginStart="534dp"
+            android:layout_marginTop="68dp"
             android:background="@drawable/logo" />
 
         <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="39dp"
+            android:layout_width="410dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/logo"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="154dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginStart="452dp"
+            android:layout_marginTop="93dp"
+            android:layout_marginEnd="418dp"
+            android:layout_marginBottom="137dp"
             android:fontFamily="sans-serif-condensed"
             android:text="@string/app_name"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp"
+            android:textSize="36sp"
             android:textStyle="bold|italic"
             android:typeface="sans" />
 

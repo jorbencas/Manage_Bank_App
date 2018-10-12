@@ -32,15 +32,13 @@ public class Change_passwordActivity extends AppCompatActivity {
 
     public void Changepassword(View v){
         Intent intent =  new Intent(Change_passwordActivity.this, MainActivity.class);
-        if (! (txtoldpassword.getText().toString().equals(txtlastpassword.getText().toString()))){
-            Toast.makeText(Change_passwordActivity.this, "Error, las contrasenyas no coinciden", Toast.LENGTH_SHORT).show();
-        }else{
+        if (txtoldpassword.getText().toString().equals(txtlastpassword.getText().toString())){
             Toast.makeText(Change_passwordActivity.this, txtpassword.getText().toString(), Toast.LENGTH_SHORT).show();
             intent.putExtra("ACTION",txtpassword.getText().toString());
             startActivity(intent);
+        }else{
+            Toast.makeText(Change_passwordActivity.this, "Error, las contrasenyas no coinciden", Toast.LENGTH_SHORT).show();
         }
-
-
     }
 
 }

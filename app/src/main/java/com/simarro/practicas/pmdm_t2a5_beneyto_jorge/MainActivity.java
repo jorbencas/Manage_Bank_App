@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  {
@@ -14,7 +16,6 @@ public class MainActivity extends AppCompatActivity  {
     private EditText txtnombre;
     private EditText txtpassword;
     private Button Btnaceptar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +45,7 @@ public class MainActivity extends AppCompatActivity  {
         /*Intent intent = new Intent(MainActivity.this, SlashActivity.class);
         startActivity(intent);*/
     }
-    public void tooglepassword(View v){
-        txtpassword.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
-    }
+
 
     @Override
     protected void onStop() {

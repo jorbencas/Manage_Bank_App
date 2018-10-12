@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="419dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textpassword"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textpassword"
+        android:layout_width="419dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="140dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bAdd"
+        style="@style/dashboard_button_horizontal_tablet"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintEnd_toStartOf="@+id/bDelete"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+    <ImageButton
+        android:id="@+id/bDelete"
+        style="@style/dashboard_button_horizontal_tablet"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toTopOf="@+id/bStar"
+        app:layout_constraintTop_toBottomOf="@+id/textpassword"
+        tools:layout_editor_absoluteX="534dp" />
+
+    <ImageButton
+        android:id="@+id/bCamera"
+        style="@style/dashboard_button_horizontal_tablet"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bDelete"
+        app:layout_constraintTop_toBottomOf="@+id/textpassword" />
+
+    <ImageButton
+        android:id="@+id/bGallery"
+        style="@style/dashboard_button_horizontal_tablet"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bStar"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bCheckbox"
+        style="@style/dashboard_button_horizontal_tablet"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/bStar" />
+
+    <ImageButton
+        android:id="@+id/bStar"
+        style="@style/dashboard_button_horizontal_tablet"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/star_on"
+        tools:layout_editor_absoluteX="534dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -10,4 +10,7 @@
     <string name="authentication">No se ha podido autenticar, la contrasenya debe ser como minimo de 8 caracteres</string>
     <string name="dni">DNI</string>
     <string name="password">Contrasenya</string>
+    <string name="transfer_another_account">Transfer another account</string>
+    <string name="transfer_my_account">Transfer my account</string>
+    <string name="do_you_want_send_justifier">Do You Want Send Justifier</string>
 </resources>

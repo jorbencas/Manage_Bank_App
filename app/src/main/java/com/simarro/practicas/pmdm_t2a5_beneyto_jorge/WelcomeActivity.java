@@ -46,22 +46,15 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         bStar.setOnClickListener(this);
     }
 
-    /**
-     * Called when a view has been clicked.
-     *
-     * @param v The view that was clicked.
-     */
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bAdd:
                 Toast.makeText(this, "Pulsado boton de añadir", Toast.LENGTH_SHORT).show();
-                //changeview(textpassword.getText().toString());
                 loadchangepassword();
                 break;
             case R.id.bDelete:
-                Toast.makeText(this, "Pulsado boton de borrar", Toast.LENGTH_SHORT).show();
-                changeview("Borrar");
+                startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class));
                 break;
             case R.id.bCamera:
                 Toast.makeText(this, "Pulsado boton de camara", Toast.LENGTH_SHORT).show();
@@ -87,9 +80,11 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         intent.putExtra("ACTION",name);
         startActivity(intent);
     }
+
     private void loadchangepassword(){
         Intent intent = new Intent(WelcomeActivity.this, Change_passwordActivity.class);
         intent.putExtra("PASSWORD",this.getIntent().getStringExtra("PASSWORD"));
         startActivity(intent);
     }
+
 }

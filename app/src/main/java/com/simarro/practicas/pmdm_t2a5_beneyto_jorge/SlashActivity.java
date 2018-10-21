@@ -18,7 +18,6 @@ public class SlashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slash);
 
-
         relativeLayout = (RelativeLayout) findViewById(R.id.main_layout);
         animation = AnimationUtils.loadAnimation(SlashActivity.this, R.anim.up_translation);
         animation.setDuration(600);

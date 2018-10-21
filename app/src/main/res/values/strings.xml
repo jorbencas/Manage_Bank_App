@@ -9,4 +9,8 @@
     <string name="authentication">You can`t authenticated, the password must be min 8 characters</string>
     <string name="dni">DNI</string>
     <string name="password">password</string>
+    <string name="title_activity_grid">GridActivity</string>
+    <string name="transfer_another_account">Transfer another account</string>
+    <string name="transfer_my_account">Transfer my account</string>
+    <string name="do_you_want_send_justifier">Do You Want Send Justifier</string>
 </resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:context=".AddChargeActivity">
+
+    <GridView
+        android:id="@+id/GridOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="1dp"
+        android:columnWidth="57dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <RadioGroup
+        android:layout_width="353dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/GridOpciones"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/transfermyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/transfer_my_account" />
+
+        <RadioButton
+            android:id="@+id/transfersomeoneAccount"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/transfer_another_account" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/setAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="215dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/cmdopciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="175dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="236dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/do_you_want_send_justifier" />
+
+    <Button
+        android:id="@+id/btnok"
+        style="@style/normal_button_two_vertical_mobile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="45dp"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/btncancel"
+        style="@style/normal_button_two_vertical_mobile"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="45dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

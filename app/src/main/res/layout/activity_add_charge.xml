@@ -15,9 +15,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="27dp"
         android:layout_marginBottom="1dp"
         android:columnWidth="57dp"
         android:horizontalSpacing="5dp"
@@ -32,7 +32,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="19dp"
         android:visibility="visible">
 
@@ -58,15 +58,15 @@
     <EditText
         android:id="@+id/setAccount"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_height="24dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="215dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="191dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -74,16 +74,16 @@
 
     <Spinner
         android:id="@+id/cmdopciones"
-        android:outlineAmbientShadowColor="@color/colorPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="175dp" />
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="136dp"
+        android:outlineAmbientShadowColor="@color/colorPrimary" />
 
     <CheckBox
         android:id="@+id/justifyed"
@@ -93,20 +93,20 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="88dp"
-        android:text="@string/do_you_want_send_justifier"
-        android:onClick="sendjustified"/>
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="431dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="53dp"
+        android:onClick="sendjustified"
+        android:text="@string/do_you_want_send_justifier" />
 
     <Button
         android:id="@+id/btnok"
         style="@style/normal_button_two_vertical_mobile"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="15dp"
         android:text="Ok" />
 
     <Button
@@ -114,8 +114,42 @@
         style="@style/normal_button_two_vertical_mobile"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="15dp"
         android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="167dp"
+        android:text="Seleciona la divisa" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="14dp"
+        android:text="Seleciona el teu Numero de Compte" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GridOpciones"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="-230dp"
+        android:layout_toStartOf="@+id/setAccount"
+        android:text="Seleciona el compte" />
 
 </RelativeLayout>

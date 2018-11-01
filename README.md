@@ -9,5 +9,5 @@
 
 ### Login Screen
 
-<img src="./Screenshots/login.png" width="256px" >
+<img src="./Screenshots/Login.png" width="256px" >
 

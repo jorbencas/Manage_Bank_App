@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:context=".AddChargeActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <GridView
         android:id="@+id/GridOpciones"
@@ -15,10 +12,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="8dp"
         android:columnWidth="57dp"
         android:horizontalSpacing="5dp"
         android:numColumns="2"
@@ -26,14 +20,14 @@
         android:verticalSpacing="10dp" />
 
     <RadioGroup
-        android:layout_width="353dp"
-        android:layout_height="80dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="579dp"
+        android:layout_height="73dp"
         android:layout_below="@+id/GridOpciones"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:visibility="visible">
 
         <RadioButton
@@ -57,15 +51,11 @@
 
     <EditText
         android:id="@+id/setAccount"
-        style="@style/input_text_vertical_mobile"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="296dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="191dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -73,59 +63,47 @@
 
     <Spinner
         android:id="@+id/cmdopciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="437dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="136dp"/>
+        android:layout_marginTop="112dp" />
 
     <CheckBox
         android:id="@+id/justifyed"
-        android:layout_width="236dp"
-        android:layout_height="27dp"
+        android:layout_width="346dp"
+        android:layout_height="41dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="431dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:onClick="sendjustified"
         android:text="@string/do_you_want_send_justifier" />
 
     <Button
         android:id="@+id/btnok"
-        style="@style/normal_button_two_vertical_mobile"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="62dp"
-        android:layout_marginBottom="15dp"
         android:text="Ok" />
 
     <Button
         android:id="@+id/btncancel"
-        style="@style/normal_button_two_vertical_mobile"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="64dp"
         android:text="Cancel" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="465dp"
+        android:layout_height="26dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="204dp"
-        android:layout_marginBottom="167dp"
+        android:layout_marginTop="68dp"
         android:text="Seleciona la divisa" />
 
     <TextView
@@ -134,8 +112,6 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView3"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="14dp"
         android:text="Seleciona el teu Numero de Compte" />
 
     <TextView
@@ -144,9 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/GridOpciones"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="-230dp"
+        android:layout_marginStart="8dp"
         android:layout_toStartOf="@+id/setAccount"
         android:text="Seleciona el compte" />
 

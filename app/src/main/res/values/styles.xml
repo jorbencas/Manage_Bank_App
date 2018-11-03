@@ -8,8 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--<style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>-->
-
     <style name="normal_button">
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textColor">@color/text_button_color</item>
@@ -76,12 +74,21 @@
         <item name="android:background">@drawable/button_selector</item>
     </style>
 
+    <style name="normal_button_two_vertical_tablet" parent="@style/normal_button">
+        <item name="android:layout_width">339dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_radius</item>
+    </style>
+
     <style name="normal_button_one_vertical_tablet" parent="@style/normal_button">
         <item name="android:layout_width">339dp</item>
         <item name="android:layout_height">75dp</item>
         <item name="android:textSize">18sp</item>
         <item name="android:background">@drawable/button_radius</item>
     </style>
+
+
 
     <style name="input_text_vertical_tablet">
         <item name="android:layout_width">601dp</item>
@@ -106,6 +113,8 @@
         <item name="android:layout_width">601dp</item>
         <item name="android:layout_height">44dp</item>
     </style>
+
+    <!--Otros estilos-->
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

@@ -1,3 +1,5 @@
+#TODO
+I must change the id of input new password in change password Activity for old password id in land, xlarge and  xlange-land
 # Manage Bank
  <img src="./app/src/main/res/drawable/logo.png" width="45"/>
 

@@ -18,13 +18,14 @@ public class AddChargeActivity extends AppCompatActivity implements View.OnClick
 
     private GridView grdOpciones;
     private ArrayAdapter<String> adapatador, adapatadordivisa;
-    String[] datos = new String[]{"XXXX XXXX XX XXXXXXXXXX","XXXX XXXX XX XXXXXXXXXX","XXXX XXXX XX XXXXXXXXXX","XXXX XXXX XX XXXXXXXXXX"};
+    String[] datos = new String[]{"AL86751639367318444714198669","AL89515635252277023782748302","AL39153296222641598198140883","AL47907501989147671525950076"};
     private RadioButton transfersomeoneAccount, transfermyAccount;
     private EditText setAccount;
     private Spinner cmdopciones;
-    String[] divisa = new String[]{"€", "$"};
+    String[] divisa = new String[]{"€", "$","£","\u20BF"};
     private CheckBox justifyed;
     private Button btncancel, btnok;
+    private View itemClick = null;
     Charge charge = new Charge();
 
     @Override
@@ -89,34 +90,38 @@ public class AddChargeActivity extends AppCompatActivity implements View.OnClick
         switch(view.getId()) {
             case R.id.transfersomeoneAccount:
                 if (checked)
-                    setAccount.setVisibility(View.VISIBLE);
+                    this.setAccount.setVisibility(View.VISIBLE);
                 break;
             case R.id.transfermyAccount:
                 if (checked)
-                    setAccount.setVisibility(View.INVISIBLE);
-                    charge.setAccount("12345678920147852369");
+                    this.setAccount.setVisibility(View.INVISIBLE);
+                    this.charge.setAccount("12345678920147852369");
                 break;
         }
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        //view.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-        charge.setNumber_account(String.valueOf(parent.getItemAtPosition(position)));
+       if(this.itemClick!=null){
+           this.itemClick.setBackgroundColor(getResources().getColor(R.color.text_button_color));
+       }
+       this.itemClick = view;
+       this.itemClick.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+       this.charge.setNumber_account(String.valueOf(parent.getItemAtPosition(position)));
     }
 
     public void sendjustified(View view){
-        if (justifyed.isChecked()){
-            charge.setJusfityer(Boolean.TRUE);
+        if (this.justifyed.isChecked()){
+            this.charge.setJusfityer(Boolean.TRUE);
         }else{
-            charge.setJusfityer(Boolean.FALSE);
+            this.charge.setJusfityer(Boolean.FALSE);
         }
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         char divise = (char) String.valueOf(parent.getItemAtPosition(position)).charAt(0);
-        charge.setDivise(divise);
+        this.charge.setDivise(divise);
     }
 
     @Override

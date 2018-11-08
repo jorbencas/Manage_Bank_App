@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/text_button_color"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp"
     tools:context=".AddChargeActivity">

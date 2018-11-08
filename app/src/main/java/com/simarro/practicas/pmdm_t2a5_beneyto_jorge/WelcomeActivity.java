@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
+
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView txtsaludo;
@@ -19,7 +21,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     private ImageButton bGallery;
     private ImageButton bCheckbox;
     private ImageButton bStar;
-
+    private String cliente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         textpassword = (TextView)findViewById(R.id.textpassword);
         textpassword.setText("Contrasenya " + this.getIntent().getStringExtra("PASSWORD"));
 
+        cliente = this.getIntent().getStringExtra("cliente");
 
         bAdd = (ImageButton)findViewById(R.id.bAdd);
         bDelete = (ImageButton)findViewById(R.id.bDelete);
@@ -84,6 +87,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     private void loadchangepassword(){
         Intent intent = new Intent(WelcomeActivity.this, Change_passwordActivity.class);
         intent.putExtra("PASSWORD",this.getIntent().getStringExtra("PASSWORD"));
+        intent.putExtra("cliente",this.cliente);
         startActivity(intent);
     }
 

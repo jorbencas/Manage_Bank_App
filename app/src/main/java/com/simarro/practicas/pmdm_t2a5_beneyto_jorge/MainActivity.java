@@ -39,7 +39,18 @@ public class MainActivity extends AppCompatActivity  {
         MiBancoOperacional mbo = MiBancoOperacional.getInstance(this);
 
         /*if ( txtnombre.length() == 0 || (txtnombre.length() < 8 && txtpassword.length() < 8) ){
-            Toast.makeText(MainActivity.this, "Error de autenticación", Toast.LENGTH_SHORT).show();
+             AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
+                builder.setMessage(R.string.authentication)
+                        .setTitle("Error de credenciales");
+
+                builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
         }else{*/
 
             // Introducimos los datos como si fuera la pantalla inicial
@@ -52,6 +63,7 @@ public class MainActivity extends AppCompatActivity  {
             a = mbo.login(a);
 
         if(a==null){
+
             System.out.println("No ha podido loguearse con 1234 como password.\n");
             System.out.println("\n");
         }else{
@@ -65,7 +77,6 @@ public class MainActivity extends AppCompatActivity  {
             System.out.println(String.valueOf(a.getId()));
             intent.putExtra("cliente",String.valueOf(a.getId()));
             startActivity(intent);
-
         }
 
 

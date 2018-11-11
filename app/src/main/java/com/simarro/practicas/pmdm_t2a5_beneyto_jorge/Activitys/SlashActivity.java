@@ -1,4 +1,4 @@
-package com.simarro.practicas.pmdm_t2a5_beneyto_jorge;
+package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -6,13 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
 
 public class SlashActivity extends AppCompatActivity {
 
     private final int ANIMATION_DURATION = 3000;
     private RelativeLayout relativeLayout;
     private Animation animation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +25,6 @@ public class SlashActivity extends AppCompatActivity {
         relativeLayout = (RelativeLayout) findViewById(R.id.main_layout);
         animation = AnimationUtils.loadAnimation(SlashActivity.this, R.anim.up_translation);
         animation.setDuration(600);
-
         relativeLayout.startAnimation(animation);
 
         new Handler().postDelayed(new Runnable() {

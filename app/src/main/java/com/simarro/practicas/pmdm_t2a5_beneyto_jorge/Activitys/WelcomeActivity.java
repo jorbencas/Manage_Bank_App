@@ -1,15 +1,15 @@
-package com.simarro.practicas.pmdm_t2a5_beneyto_jorge;
+package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBD;
 
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -60,8 +60,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class));
                 break;
             case R.id.bCamera:
-                Toast.makeText(this, "Pulsado boton de camara", Toast.LENGTH_SHORT).show();
-                changeview("Camara");
+                startActivity(new Intent(WelcomeActivity.this, AccountListActivity.class).putExtra("cliente",this.cliente));
                 break;
             case R.id.bGallery:
                 Toast.makeText(this, "Pulsado boton de galleria", Toast.LENGTH_SHORT).show();
@@ -89,6 +88,25 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         intent.putExtra("PASSWORD",this.getIntent().getStringExtra("PASSWORD"));
         intent.putExtra("cliente",this.cliente);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        /*Intent intent = new Intent(MainActivity.this, SlashActivity.class);
+        startActivity(intent);*/
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        MiBD.closeDB();
+        super.onDestroy();
     }
 
 }

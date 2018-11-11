@@ -13,18 +13,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SlashActivity">
+        <activity android:name=".Activitys.SlashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".ViewActionActivity" />
-        <activity android:name=".Change_passwordActivity" />
-        <activity android:name=".AddChargeActivity" />
+        <activity android:name=".Activitys.MainActivity" />
+        <activity android:name=".Activitys.WelcomeActivity" />
+        <activity android:name=".Activitys.ViewActionActivity" />
+        <activity android:name=".Activitys.Change_passwordActivity" />
+        <activity android:name=".Activitys.AddChargeActivity" />
+        <activity android:name=".Activitys.AccountListActivity" />
+        <activity android:name=".Activitys.ListTransactionsActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.simarro.practicas.pmdm_t2a5_beneyto_jorge;
+package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,9 @@ import android.widget.GridView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Charge;
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
 
 public class AddChargeActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
 

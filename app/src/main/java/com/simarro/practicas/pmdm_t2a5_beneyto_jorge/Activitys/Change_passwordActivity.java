@@ -1,4 +1,4 @@
-package com.simarro.practicas.pmdm_t2a5_beneyto_jorge;
+package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBancoOperacional;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
 

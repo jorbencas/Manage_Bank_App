@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         txtnombre = (EditText)findViewById(R.id.txtnombre);
         txtpassword = (EditText)findViewById(R.id.txtpassword);
         Btnaceptar = (Button)findViewById(R.id.Blnaceptar);
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity  {
                         .setTitle("Error de credenciales");
 
                 builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) { }
+                    public void onClick(DialogInterface dialog, int which) { dialog.cancel(); }
                 });
                 AlertDialog dialog = builder.create();
                 dialog.show();
@@ -59,8 +58,14 @@ public class MainActivity extends AppCompatActivity  {
             a = mbo.login(a);
 
             if(a==null){
-                System.out.println("No ha podido loguearse con 1234 como password.\n");
-                System.out.println("\n");
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Falo al hacer el login, usuario o contrasenya incorrectos").setTitle("Error en el login");
+
+                builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) { dialog.cancel(); }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }else{
                 System.out.println("Datos del cliente logueado\n");
                 System.out.println("-----------------------------------------\n");

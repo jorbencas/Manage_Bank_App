@@ -26,7 +26,7 @@
         <activity android:name=".Activitys.Change_passwordActivity" />
         <activity android:name=".Activitys.AddChargeActivity" />
         <activity android:name=".Activitys.AccountListActivity" />
-        <activity android:name=".Activitys.ListTransactionsActivity"></activity>
+        <activity android:name=".Activitys.TransactionsListActivity"></activity>
     </application>
 
 </manifest>

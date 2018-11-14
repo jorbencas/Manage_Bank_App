@@ -5,13 +5,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.webkit.WebViewClient;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Adapters.AccountListAdapter;
@@ -20,7 +16,6 @@ import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBancoOperacional;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cuenta;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AccountListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, View.OnClickListener {
@@ -52,7 +47,7 @@ public class AccountListActivity extends AppCompatActivity implements AdapterVie
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent = new Intent(AccountListActivity.this,ListTransactionsActivity.class);
+        Intent intent = new Intent(AccountListActivity.this,TransactionsListActivity.class);
         int cuenta_id = this.accountadapter.getItem(position).getId();
         startActivity(intent.putExtra("cuenta",String.valueOf(cuenta_id)));
         Toast.makeText(this, "Pulsado " + this.accountadapter.getItem(position).getId()  , Toast.LENGTH_SHORT).show();

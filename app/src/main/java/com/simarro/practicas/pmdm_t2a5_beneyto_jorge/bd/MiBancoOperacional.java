@@ -2,6 +2,7 @@ package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd;
 
 import android.content.Context;
 
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys.MainActivity;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cuenta;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Movimiento;

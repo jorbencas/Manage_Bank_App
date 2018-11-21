@@ -26,7 +26,8 @@
         <activity android:name=".Activitys.Change_passwordActivity" />
         <activity android:name=".Activitys.AddChargeActivity" />
         <activity android:name=".Activitys.AccountListActivity" />
-        <activity android:name=".Activitys.TransactionsListActivity"></activity>
+        <activity android:name=".Activitys.TransactionsListActivity" />
+        <activity android:name=".Adapters.DialogoPersonalizadoActivity"></activity>
     </application>
 
 </manifest>

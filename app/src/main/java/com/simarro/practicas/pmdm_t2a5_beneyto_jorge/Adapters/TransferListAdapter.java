@@ -1,7 +1,9 @@
 package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +16,17 @@ import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Movimiento;
 
 import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TransferListAdapter<T> extends ArrayAdapter<T> {
+    Activity context;
+    private List<Movimiento> movimiento = new ArrayList<Movimiento>();
 
-    public TransferListAdapter( Context context, List<T> objects) {
-        super(context, 0, objects);
+    public TransferListAdapter(Fragment context, List<T> objects) {
+        super(context.getActivity(), 0, objects);
+        this.context = context.getActivity();
+        this.movimiento = movimiento;
     }
 
     @Override

@@ -39,34 +39,17 @@ public class TransactionsListActivity extends AppCompatActivity implements Trans
 
 
     public void onTransferSelected(Movimiento movimiento){
-        /*
-        this.descripcion = movimiento.getDescripcion();
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.descripcion).setTitle("Descripción");
-
-        builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) { dialog.cancel(); }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();*/
-
-
-
         FragmentManager fragmentManager = this.getSupportFragmentManager();
-        DialogoPersonalizadoActivity dialogo = newInstance("jerk",1488);
+        DialogoPersonalizadoActivity dialogo = newInstance(movimiento);
         dialogo.show(fragmentManager, "tagAlerta");
 
     }
 
-    static DialogoPersonalizadoActivity newInstance(String nombre,int num) {
+    static DialogoPersonalizadoActivity newInstance(Movimiento movimiento) {
         DialogoPersonalizadoActivity f = new DialogoPersonalizadoActivity();
-
-        // Supply num input as an argument.
-        Bundle args = new Bundle();
-        args.putString("titulo", nombre);
-        args.putInt("valor", num);
-        f.setArguments(args);
+        Bundle mov = new Bundle();
+        mov.putSerializable("movimiento",movimiento);
+        f.setArguments(mov);
 
         return f;
     }

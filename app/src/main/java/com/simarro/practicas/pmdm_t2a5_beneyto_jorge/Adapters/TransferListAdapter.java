@@ -2,6 +2,7 @@ package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -64,6 +65,14 @@ public class TransferListAdapter<T> extends ArrayAdapter<T> {
         String fechaComoCadena = sdf.format(item.getFechaOperacion());
         System.out.println("Fecha Origen: " + fechaComoCadena);
         fechaOperacion.setText(fechaComoCadena);
+
+        if (item.getImporte()<0){
+            listItemView.setBackgroundColor(Color.parseColor("#F78181"));
+        }else{
+            listItemView.setBackgroundColor(Color.parseColor("#A9F5A9"));
+        }
+
+
         return listItemView;
     }
 }

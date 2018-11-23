@@ -42,13 +42,14 @@ public class TransactionsListActivity extends AppCompatActivity implements Trans
         FragmentManager fragmentManager = this.getSupportFragmentManager();
         DialogoPersonalizadoActivity dialogo = newInstance(movimiento);
         dialogo.show(fragmentManager, "tagAlerta");
-
     }
 
     static DialogoPersonalizadoActivity newInstance(Movimiento movimiento) {
         DialogoPersonalizadoActivity f = new DialogoPersonalizadoActivity();
+        Movimiento movement = new Movimiento();
+        movement = movimiento;
         Bundle mov = new Bundle();
-        mov.putSerializable("movimiento",movimiento);
+        mov.putSerializable("movimiento",movement);
         f.setArguments(mov);
 
         return f;

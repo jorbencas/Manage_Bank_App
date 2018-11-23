@@ -39,7 +39,6 @@ public class TransactionFragment extends Fragment implements AdapterView.OnItemC
         this.mbo = MiBancoOperacional.getInstance(this.getActivity());
         if(this.getActivity().getClass().equals(TransactionsListActivity.class)){
             this.cargarmovimiento();
-
             this.list = (ListView) getView().findViewById(R.id.listatransferencias);
             this.accountadapter = new TransferListAdapter<Movimiento>(this,listaMovimiento);
             this.list.setAdapter(accountadapter);

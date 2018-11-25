@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBD;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBancoOperacional;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
 
@@ -80,4 +79,16 @@ public class MainActivity extends AppCompatActivity  {
             }
         }
     }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
 }

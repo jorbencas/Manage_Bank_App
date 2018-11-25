@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBD;
 
 public class ViewActionActivity extends AppCompatActivity {
 
@@ -16,4 +17,16 @@ public class ViewActionActivity extends AppCompatActivity {
         txtaction = (TextView)findViewById(R.id.txtaction);
         txtaction.setText("Acción: " + this.getIntent().getStringExtra("ACTION"));
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        MiBD.closeDB();
+        super.onDestroy();
+    }
+
 }

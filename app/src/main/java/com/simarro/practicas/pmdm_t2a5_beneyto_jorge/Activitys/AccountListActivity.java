@@ -35,4 +35,22 @@ public class AccountListActivity extends AppCompatActivity implements AccountLis
             startActivity(intent.putExtra("cuenta",String.valueOf(cuenta_id)));
         }
     }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+
 }

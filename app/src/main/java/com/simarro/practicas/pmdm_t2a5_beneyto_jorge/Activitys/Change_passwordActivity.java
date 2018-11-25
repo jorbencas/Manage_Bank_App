@@ -79,4 +79,20 @@ public class Change_passwordActivity extends AppCompatActivity implements View.O
             Toast.makeText(Change_passwordActivity.this, "Error, las contrasenyas no coinciden", Toast.LENGTH_SHORT).show();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
 }

@@ -3,7 +3,6 @@ package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cuenta;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Movimiento;
 
-import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;

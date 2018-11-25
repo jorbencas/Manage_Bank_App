@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Charge;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBD;
 
 public class AddChargeActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
 
@@ -129,4 +130,22 @@ public class AddChargeActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) { charge.setDivise(' '); }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        MiBD.closeDB();
+        super.onDestroy();
+    }
+
 }

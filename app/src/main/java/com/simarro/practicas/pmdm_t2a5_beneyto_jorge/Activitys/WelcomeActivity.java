@@ -9,7 +9,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBD;
 
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -91,21 +90,13 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        /*Intent intent = new Intent(MainActivity.this, SlashActivity.class);
-        startActivity(intent);*/
-    }
-
-
-    @Override
     protected void onStop() {
         super.onStop();
     }
 
     @Override
     protected void onDestroy() {
-        MiBD.closeDB();
+        //MiBD.closeDB();
         super.onDestroy();
     }
 

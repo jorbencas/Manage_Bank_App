@@ -144,7 +144,6 @@ public class AddChargeActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     protected void onDestroy() {
-        MiBD.closeDB();
         super.onDestroy();
     }
 

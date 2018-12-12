@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/bAdd"
+            android:icon="@drawable/cuenta"
+            android:title="Change password"
+            app:showAsAction="withText" />
+
+        <item
+            android:id="@+id/bDelete"
+            android:title="movimento"
+            android:icon="@drawable/configuracion"/>
+        <item
+            android:id="@+id/bCamera"
+            android:title="lista transferencias"
+            android:icon="@drawable/configuracion"/>
+</menu>

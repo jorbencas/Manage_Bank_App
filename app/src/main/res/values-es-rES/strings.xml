@@ -13,4 +13,6 @@
     <string name="transfer_another_account">Transfer another account</string>
     <string name="transfer_my_account">Transfer my account</string>
     <string name="do_you_want_send_justifier">Do You Want Send Justifier</string>
+    <string name="transferencias" />
+    <string name="listarcuentas" />
 </resources>

@@ -25,7 +25,7 @@ public class ViewActionActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        MiBD.closeDB();
+        //MiBD.closeDB();
         super.onDestroy();
     }
 

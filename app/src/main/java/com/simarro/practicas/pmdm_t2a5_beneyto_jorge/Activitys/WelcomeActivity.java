@@ -29,8 +29,8 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
 
         txtsaludo = (TextView)findViewById(R.id.txtwelcome);
         txtsaludo.setText("Bienvenido " + this.getIntent().getStringExtra("NOMBRE"));
@@ -68,7 +68,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 loadchangepassword();
                 return true;
             case R.id.bDelete:
-                startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class).putExtra("id",this.cliente));
                 return true;
             case R.id.bCamera:
                 startActivity(new Intent(WelcomeActivity.this, AccountListActivity.class).putExtra("cliente",this.cliente));
@@ -126,7 +126,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 loadchangepassword();
                 break;
             case R.id.bDelete:
-                startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class).putExtra("id",this.cliente));
                 break;
             case R.id.bCamera:
                 startActivity(new Intent(WelcomeActivity.this, AccountListActivity.class).putExtra("cliente",this.cliente));

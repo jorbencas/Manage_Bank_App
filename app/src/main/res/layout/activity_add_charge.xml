@@ -27,6 +27,7 @@
         android:verticalSpacing="10dp" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="353dp"
         android:layout_height="80dp"
         android:layout_below="@+id/GridOpciones"
@@ -59,14 +60,16 @@
     <EditText
         android:id="@+id/setAccount"
         style="@style/input_text_vertical_mobile"
+        android:layout_width="263dp"
+        android:layout_height="28dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="296dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="191dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="197dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -74,15 +77,15 @@
 
     <Spinner
         android:id="@+id/cmdopciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="136dp"/>
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="116dp" />
 
     <CheckBox
         android:id="@+id/justifyed"
@@ -150,5 +153,41 @@
         android:layout_marginEnd="-230dp"
         android:layout_toStartOf="@+id/setAccount"
         android:text="Seleciona el compte" />
+
+    <EditText
+        android:id="@+id/importe"
+        android:layout_width="186dp"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="117dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Importe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="165dp"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spinnerDentro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="205dp" />
 
 </RelativeLayout>

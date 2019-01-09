@@ -153,4 +153,37 @@ public class CuentaDAO implements PojoDAO{
         return listaCuentas;
     }
 
+
+    public ArrayList<String> getCuentasStr(Cliente cliente) {
+        ArrayList<String> listaCuentas = new ArrayList<String>();
+        String condicion = "idcliente=" + String.valueOf(cliente.getId());
+        String[] columnas = {
+                "id", "banco", "sucursal", "dc", "numerocuenta", "saldoactual", "idcliente"
+        };
+        Cursor cursor = MiBD.getDB().query("cuentas", columnas, condicion, null, null, null, null);
+        if (cursor.moveToFirst()) {
+            //Recorremos el cursor hasta que no haya más registros
+            do {
+                Cuenta c = new Cuenta();
+                c.setId(cursor.getInt(0));
+                c.setBanco(cursor.getString(1));
+                c.setSucursal(cursor.getString(2));
+                c.setDc(cursor.getString(3));
+                c.setNumeroCuenta(cursor.getString(4));
+                c.setSaldoActual(cursor.getFloat(5));
+
+                c.setCliente(cliente);
+
+                // Obtenemos la lista de movimientos y los asignamos
+                //c.setListaMovimientos(MiBD.getInstance(null).getMovimientoDAO().getMovimientos(c));
+
+                listaCuentas.add(c.getBanco()+c.getSucursal()+c.getDc()+c.getNumeroCuenta());
+
+            } while (cursor.moveToNext());
+        }
+        return listaCuentas;
+    }
+
+
+
 }

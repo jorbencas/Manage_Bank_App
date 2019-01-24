@@ -138,8 +138,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView3"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
         android:text="Seleciona el teu Numero de Compte" />
 
     <TextView
@@ -154,28 +154,31 @@
         android:layout_toStartOf="@+id/setAccount"
         android:text="Seleciona el compte" />
 
-    <EditText
-        android:id="@+id/importe"
-        android:layout_width="186dp"
-        android:layout_height="23dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="117dp"
-        android:layout_toEndOf="@+id/textView3"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
     <TextView
         android:id="@+id/Importe"
-        android:layout_width="wrap_content"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="201dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="165dp"
-        android:text="TextView" />
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="164dp"
+        android:text="Importe" />
+
+    <EditText
+        android:id="@+id/importe"
+        android:layout_width="156dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/cmdopciones"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-52dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <Spinner
         android:id="@+id/spinnerDentro"

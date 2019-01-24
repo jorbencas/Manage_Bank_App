@@ -70,20 +70,8 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.bDelete:
                 startActivity(new Intent(WelcomeActivity.this, AddChargeActivity.class).putExtra("id",this.cliente));
                 return true;
-            case R.id.bCamera:
-                startActivity(new Intent(WelcomeActivity.this, AccountListActivity.class).putExtra("cliente",this.cliente));
-                return true;
-            case R.id.bGallery:
-                Toast.makeText(this, "Pulsado boton de galleria", Toast.LENGTH_SHORT).show();
-                changeview("Galleria");
-                return true;
-            case R.id.bCheckbox:
-                Toast.makeText(this, "Pulsado boton de checkbox", Toast.LENGTH_SHORT).show();
-                changeview("Tarea");
-                return true;
-            case R.id.bStar:
-                Toast.makeText(this, "Pulsado boton de estrella" , Toast.LENGTH_SHORT).show();
-                changeview("Estrella");
+            case R.id.bSettings:
+                startActivity(new Intent(WelcomeActivity.this, SettingsActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(itemDrawer);

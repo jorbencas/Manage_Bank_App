@@ -1,11 +1,9 @@
 package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,14 +16,11 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBD;
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBancoOperacional;
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.dao.ClienteDAO;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.dao.CuentaDAO;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cuenta;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Movimiento;
 
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Charge;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
 
 import java.util.ArrayList;
@@ -147,7 +142,7 @@ public class AddChargeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.btncancel:
                 reloadactivity();
-                Toast.makeText(this, "Pulsado boton de añadir", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Todas las opciones han sido borradas", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

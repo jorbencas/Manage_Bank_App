@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Categoria 1">
+        <CheckBoxPreference
+            android:key="reproducirMusica"
+            android:title="Música"
+            android:summary="Escuchar la música mientras se ejecuta la aplicación" />
+
+        <CheckBoxPreference
+            android:key="reproducirVideo"
+            android:title="Video"
+            android:summary="Reproducir el video de bienvenida" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Categoria 2">
+        <ListPreference
+            android:key="pais"
+            android:title="Pais de residencia"
+            android:summary="¿Donde vivo?"
+            android:dialogTitle="Indicar Pais donde vives"
+            android:entries="@array/pais"
+            android:entryValues="@array/codigopais"
+            android:defaultValue="BDL"/>
+        <ListPreference
+            android:key="pais"
+            android:title="Origen de Datos"
+            android:summary="Origen de los datos"
+            android:dialogTitle="Indicar de donde vienen lod datos"
+            android:entries="@array/origendatos"
+            android:entryValues="@array/origendatos" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -16,4 +16,9 @@
             android:id="@+id/bCamera"
             android:title="lista transferencias"
             android:icon="@drawable/configuracion"/>
+
+        <item
+            android:id="@+id/bSettings"
+            android:title="Configuración"
+            android:icon="@drawable/configuracion" />
 </menu>

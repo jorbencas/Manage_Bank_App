@@ -5,14 +5,7 @@
 
 ## Screens of my app
 
-| Slash Screen | Login Screen |
-|-----|-----|
-<img src="./Screenshots/Slash.png" width="256px" />|<img src="./Screenshots/Login.png" width="256px" />
+| Slash Screen | Login Screen |List Transactions Screen |Transactions Screen|List Charge Screen |Settings Screen |
+|-----|-----|-----|-----|-----|-----|
+<img src="./Screenshots/Slash.png" width="256px" />|<img src="./Screenshots/Login.png" width="256px" />|<img src="./Screenshots/Listtransactions.png" width="256px" />|<img src="./Screenshots/Transaction.png" width="256px"/>|<img src="./Screenshots/ListCharge.png" width="256px" />|<img src="./Screenshots/Settings.png" width="256px" />
 
-|List Transactions Screen |Transactions Screen|
-|------|------|
-<img src="./Screenshots/Listtransactions.png" />|<img src="./Screenshots/Transaction.png"/>
-
-|List Charge Screen |Settings Screen |
-|-----|-----|
-<img src="./Screenshots/ListCharge.png"/>|<img src="./Screenshots/Settings.png" />

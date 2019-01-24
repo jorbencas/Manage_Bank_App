@@ -6,6 +6,13 @@
 ## Screens of my app
 
 | Slash Screen | Login Screen |
-|-----| -----|
+|-----|-----|
 <img src="./Screenshots/Slash.png" width="256px" />|<img src="./Screenshots/Login.png" width="256px" />
 
+|List Transactions Screen |Transactions Screen|
+|------|------|
+<img src="./Screenshots/Listtransactions.png" />|<img src="./Screenshots/Transaction.png"/>
+
+|List Charge Screen |Settings Screen |
+|-----|-----|
+<img src="./Screenshots/ListCharge.png"/>|<img src="./Screenshots/Settings.png" />

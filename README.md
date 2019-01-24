@@ -5,11 +5,7 @@
 
 ## Screens of my app
 
-### Slash Screen
-
-<img src="./Screenshots/Slash.png" width="256px" />
-
-### Login Screen
-
-<img src="./Screenshots/Login.png" width="256px" />
+| Slash Screen | Login Screen |
+|-----| -----|
+<img src="./Screenshots/Slash.png" width="256px" />|<img src="./Screenshots/Login.png" width="256px" />
 

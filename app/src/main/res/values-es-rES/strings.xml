@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Manage Bank</string>
-    <string name="title_activity_login">Inici de Sesio</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">DNI</string>
-    <string name="prompt_password">Contrasenya (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="authentication">No se ha podido autenticar, la contrasenya debe ser como minimo de 8 caracteres</string>
-    <string name="dni">DNI</string>
-    <string name="password">Contrasenya</string>
-    <string name="transfer_another_account">Transfer another account</string>
-    <string name="transfer_my_account">Transfer my account</string>
-    <string name="do_you_want_send_justifier">Do You Want Send Justifier</string>
-    <string name="transferencias" />
-    <string name="listarcuentas" />
+        <string name="app_name">Manage Bank</string>
+        <string name="title_activity_login">Inici de Sesio</string>
+        <!-- Strings related to login -->
+        <string name="prompt_email">DNI</string>
+        <string name="prompt_password">Contrasenya (optional)</string>
+        <string name="action_sign_in">Sign in or register</string>
+        <string name="action_sign_in_short">Sign in</string>
+        <string name="authentication">No se ha podido autenticar, la contrasenya debe ser como minimo de 8 caracteres</string>
+        <string name="dni">DNI</string>
+        <string name="password">Contrasenya</string>
+        <string name="transfer_another_account">Transfer another account</string>
+        <string name="transfer_my_account">Transfer my account</string>
+        <string name="do_you_want_send_justifier">Do You Want Send Justifier</string>
+        <string name="transferencias" />
+        <string name="listarcuentas" />
 </resources>

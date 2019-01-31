@@ -5,11 +5,10 @@
             android:key="reproducirMusica"
             android:title="Música"
             android:summary="Escuchar la música mientras se ejecuta la aplicación" />
-
         <CheckBoxPreference
-            android:key="reproducirVideo"
-            android:title="Video"
-            android:summary="Reproducir el video de bienvenida" />
+            android:key="videobienvenida"
+            android:title="Video de bienvenida"
+            android:summary="Activar video de bienvenida" />
     </PreferenceCategory>
 
 
@@ -30,4 +29,23 @@
             android:entries="@array/origendatos"
             android:entryValues="@array/origendatos" />
     </PreferenceCategory>
+
+    <PreferenceCategory android:title="Categoria 3">
+        <ListPreference
+            android:key="Fuente de los botones"
+            android:title="Fuentes de los botones"
+            android:summary="¿ Que fuente quieres poner a los botones?"
+            android:dialogTitle="Indicar que fuente quieres"
+            android:entries="@array/fuentes"
+            android:entryValues="@array/codigofuentes" />
+
+        <ListPreference
+            android:key="Color"
+            android:title="Seleciona el color"
+            android:summary="Que color deseas que tengan tus botones"
+            android:dialogTitle="Que color desean que tengan tus botones"
+            android:entries="@array/color"
+            android:entryValues="@array/codigocolor" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

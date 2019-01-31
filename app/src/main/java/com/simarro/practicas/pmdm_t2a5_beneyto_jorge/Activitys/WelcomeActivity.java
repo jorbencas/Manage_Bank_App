@@ -1,6 +1,9 @@
 package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
 
+import java.util.Locale;
+
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView txtsaludo;
@@ -25,13 +30,17 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     private ImageButton bCheckbox;
     private ImageButton bStar;
     private String cliente;
+    private SharedPreferences prefs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);*/
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
+        this.change_lang();
         txtsaludo = (TextView)findViewById(R.id.txtwelcome);
         txtsaludo.setText("Bienvenido " + this.getIntent().getStringExtra("NOMBRE"));
 
@@ -55,11 +64,36 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         bStar.setOnClickListener(this);
     }
 
+    private void change_lang() {
+        String lang = prefs.getString("pais", "error");
+        if (!lang.equalsIgnoreCase("error")) {
+            switch (lang){
+                case "es":
+                    lang = "es";
+                    break;
+                case"va":
+                    lang = "ca";
+                    break;
+                default:
+                    lang = "en";
+                    break;
+            };
+            Locale locale = new Locale(lang);
+            Locale.setDefault(locale);
+
+            Configuration config = new Configuration();
+            config.locale = locale;
+            getApplicationContext().getResources().updateConfiguration(config, null);
+
+        }
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.manu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem itemDrawer) {
         switch (itemDrawer.getItemId()){
@@ -91,6 +125,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         startActivity(intent);
     }
 
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -101,11 +136,6 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         super.onDestroy();
     }
 
-    /**
-     * Called when a view has been clicked.
-     *
-     * @param v The view that was clicked.
-     */
     @Override
     public void onClick(View v) {
         switch (v.getId()){

@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Adapters.DialogoPersonalizadoActivity;
+import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Fragment.DialogoPersonalizadoActivity;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Fragment.TransactionFragment;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Interfaces.TransactionListInterface;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;

@@ -2,6 +2,9 @@ package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Activitys;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,10 +12,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.R;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.bd.MiBancoOperacional;
 import com.simarro.practicas.pmdm_t2a5_beneyto_jorge.pojo.Cliente;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -30,6 +36,7 @@ public class MainActivity extends AppCompatActivity  {
         Btnaceptar = (Button)findViewById(R.id.Blnaceptar);
 
     }
+
 
     public void bacerclic(View v){
         Intent intent =  new Intent(MainActivity.this, WelcomeActivity.class);

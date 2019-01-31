@@ -1,4 +1,4 @@
-package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Adapters;
+package com.simarro.practicas.pmdm_t2a5_beneyto_jorge.Fragment;
 
 import android.app.Dialog;
 import android.content.DialogInterface;

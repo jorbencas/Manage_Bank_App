@@ -27,7 +27,7 @@
         <activity android:name=".Activitys.AddChargeActivity" />
         <activity android:name=".Activitys.AccountListActivity" />
         <activity android:name=".Activitys.TransactionsListActivity" />
-        <activity android:name=".Adapters.DialogoPersonalizadoActivity" />
+        <activity android:name=".Fragment.DialogoPersonalizadoActivity" />
         <activity android:name=".Activitys.SettingsActivity"></activity>
     </application>
 

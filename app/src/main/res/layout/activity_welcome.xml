@@ -7,38 +7,27 @@
     android:background="@color/text_button_color"
     tools:context=".Activitys.WelcomeActivity">
 
-
-
-    <!--<android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />-->
-
     <TextView
         android:id="@+id/txtwelcome"
         android:layout_width="152dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text=""
         android:textSize="14dp"
         app:layout_constraintEnd_toStartOf="@+id/textpassword"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/textpassword"
-        android:layout_width="179dp"
+        android:layout_width="156dp"
         android:layout_height="28dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:text=""
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +37,7 @@
         android:id="@+id/bAdd"
         style="@style/dashboard_button_vertical_mobile"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="32dp"
         android:src="@android:drawable/ic_menu_add"
         app:layout_constraintEnd_toStartOf="@+id/bDelete"

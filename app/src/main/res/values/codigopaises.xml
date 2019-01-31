@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="pais">
-        <item>España</item>
-        <item>Francia</item>
-        <item>Alemania</item>
+        <item>Castellano</item>
+        <item>Valenciano</item>
     </string-array>
     <string-array name="codigopais">
-        <item>ESP</item>
-        <item>FRA</item>
-        <item>ALE</item>
+        <item>es</item>
+        <item>ca</item>
     </string-array>
-
     <string-array name="origendatos">
         <item>Base de Datos Local</item>
         <item>Servicio Web</item>
     </string-array>
-
     <string-array name="codigoorigendatos">
         <item>BDL</item>
         <item>SW</item>
     </string-array>
-
+    <string-array name="fuentes">
+        <item>Albetica</item>
+        <item>Open Sans</item>
+    </string-array>
+    <string-array name="codigofuentes">
+        <item>ALB</item>
+        <item>OS</item>
+    </string-array>
+    <string-array name="color">
+        <item>Azul</item>
+        <item>Gris</item>
+    </string-array>
+    <string-array name="codigocolor">
+        <item>A</item>
+        <item>G</item>
+    </string-array>
     </resources>
